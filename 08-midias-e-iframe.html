@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- iframe = Inline Frame. Esse recurso é bastante utilizado para incorporar recursos internos e externos no nosso documento HTML-->
+    <!-- Exemplo de recurso externo, no caso, um vídeo do YouTube -->
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/k_CxMefC7mA?si=rrukJNTJ0WJxAScn"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <!-- Exemplo de conteudo interno -->
+    <iframe src="intro.html" title="Página html de receitas" frameborder="1" width="900" height="300">
+        <p>Seu navegador não suporta Iframes.</p>
+    </iframe>
+    <hr>
+    <!-- Carregando conteúdo externo - Mapas -->
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d384.5581388149759!2d-46.3968156486845!3d-23.51256161071483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1753994621151!5m2!1sen!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    title="Rua Siqueira rendon 4" width="600" height="450" style="border:10px solid #000;" allowfullscreen=""
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr>
+    <h2>Carregando conteúdo interno</h2>
+    <ul>
+        <li><a href="kimetsu.png" target="galeria"><img src="kimetsu.png" alt=""> </a></li>
+        <li><a href="kimetsu.jpg" target="galeria">Tanjiro</a></li>
+    </ul>
+    <iframe name="galeria" src="kimetsu.jpg" frameborder="0" width="800" height="500"></iframe>
+
+
+
+
+    <!-- <video> é capaz de colocar um video que você tenha baixado no seu site, lembrando que é somente parecido com o img mas não é igual. -->
+
+    <video width="640" height="360" controls>
+        <source src="tegen.mp4" type="video/mp4">
+    </video>
+</body>
+
+</html>

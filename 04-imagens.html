@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Trabalhado com imagens</h2>
+    <!-- src = source(fonte, origem do arquivo).
+alt = alternative(alternativo). O alt serve para a acessibilidade pois quando o a imagem não é carregada, o navegador busca esse texto alternativo, que serve como uma descrição da imagem. Quanto mais detalhes esse texto alternativo possuir, melhor a acessibilidade e experiência do usuário 
+-->
+    <img src="kimetsu.jpeg" alt="tanjiro olhando para cima" height="300">
+    <!-- é possível controlar a altura e a largura da imagem pelo HTML 
+height(altura) = representa a altura da imagem
+width(largura) = representa a largura/comprimento da imagem 
+-->
+    <!-- É possível utilizar imagens externas -->
+    <img src="https://plus.unsplash.com/premium_photo-1753080951637-ffbdee3c44c9?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Elemento com efeito de vidro e uma mensagem de erro" width="300" height="300">
+    <hr>
+    <figure>
+        <img src="kimetsuu.jpeg" alt="tanjiro olhando pra cima ">
+        <figcaption>tanjiro e os amigos deitados na grama</figcaption>
+    </figure>
+    <!-- Complemento sobre as imagens 28/07/2025 -->
+    <picture>
+        <source srcset="kimetsu.jpg" type="image/jpg">
+        <source srcset="kimetsu.png" type="image/png">
+        <source srcset="kimetsu.jpeg" type="image/jpeg">
+        <!-- fallback = imagem padrão caso as imagens anteriores falhem ou não sejam suportadas -->
+        <img src="kimetstu.jpeg" alt="muzam em pe com a mão no bolso">
+    </picture>
+
+</body>
+
+</html>
